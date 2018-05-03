@@ -3,8 +3,11 @@
 
 ##Authentication lines
 auth_param basic program /usr/lib64/squid/basic_ncsa_auth /etc/squid/creds
+
 auth_param basic children 5
+
 auth_param basic realm Squid proxy-caching web server
+
 auth_param basic credentialsttl 2 hours
 acl normal proxy_auth REQUIRED
 auth_param basic casesensitive off
